@@ -4,7 +4,11 @@ import logoImg from '../../assets/images/logo.svg';
 import backIcon from '../../assets/images/icons/back.svg';
 import './styles.css';
 
-function PageHeader(){
+interface PageHeaderProps{
+    title:string;
+}
+
+const PageHeader: React.FC<PageHeaderProps> = (props) => {
     return (
         <header className="page-header">
         <div className="top-bar-container">
@@ -17,11 +21,10 @@ function PageHeader(){
 
         <div className="header-content">
             <strong>
-                Estes são os proffys disponíveis 
+                {props.title}
             </strong>
         </div>
     </header>
-
 
 );
 }
