@@ -63,7 +63,7 @@
 }
 
 .buttons-container a.give-classes {
-    background-color: var(--color-secondary);
+    background-color: var(--color-secundary);
 }
 
 .buttons-container a.study:hover {
